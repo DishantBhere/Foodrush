@@ -1,0 +1,17 @@
+For test mode Razorpay gives you test credentials to simulate a successful payment without real money. Here's how:
+
+For UPI — click UPI in the popup and enter:
+success@razorpay
+This simulates a successful UPI payment instantly.
+
+For Card — click Cards and enter:
+Card Number : 4111 1111 1111 1111
+Expiry      : Any future date (12/26)
+CVV         : Any 3 digits (123)
+Name        : Any name
+OTP         : 1234
+
+For Netbanking — click Netbanking:
+
+Select any bank
+On the next page click Success
