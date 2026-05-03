@@ -23,6 +23,16 @@ It was my academic final year project. It's a full-stack smart canteen ordering 
 
 ---
 
+
+## FoodRush.io – Full Workflow Demo
+https://github.com/user-attachments/assets/afe61286-7763-488d-9566-769ab0c5b025
+
+
+
+
+
+
+
 ## 🔄 How It Works
 
 **Customer**
