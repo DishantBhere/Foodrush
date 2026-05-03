@@ -1,0 +1,162 @@
+# 🍽️ FoodRush.io
+> Smart Campus Canteen Food Ordering System
+
+---
+
+## 📸 Screenshots
+
+| Homepage | Menu |
+|---|---|
+| ![Homepage](public/screenshots/homepage.png) | ![Menu](public/screenshots/menu.png) |
+
+| Checkout | Payment |
+|---|---|
+| ![Checkout](public/screenshots/checkout.png) | ![Payment](public/screenshots/payment.png) |
+
+| Ticket | Order Tracking |
+|---|---|
+| ![Ticket](public/screenshots/ticket.png) | ![Tracking](public/screenshots/tracking.png) |
+
+| Admin Dashboard |
+|---|
+| ![Admin](public/screenshots/admin.png) |
+
+---
+
+## 🔄 How It Works
+
+**Customer**
+1. Sign up / Login
+2. Browse menu by category — Appetizers, Beverages, Desserts, Main Course, Salads & Bowls
+3. Use the AI Chatbot (bottom-right of homepage) for recommendations or canteen queries
+4. Add items to cart → proceed to Checkout
+5. Enter name, table number and email → OTP sent to email → verify to place order
+6. Pay via Razorpay
+7. Order confirmation bill sent as PDF attachment to email
+8. Unique alphanumeric ticket generated → popup appears with a COPY button
+9. Go to tracking page → paste ticket → click Track → view live order status
+
+**Order Status Flow**
+```
+Pending → Confirmed → Preparing → Ready → Done
+                                         → Cancelled
+```
+
+**Admin**
+- Login via separate admin page
+- View monthly & weekly revenue charts + order breakdown pie chart
+- Manually update order status for each order
+- Export order data to Excel
+
+---
+
+## 🛠️ Tech Stack
+
+| | Technology |
+|---|---|
+| **Framework** | Next.js 14, React 18, TypeScript |
+| **Styling** | Tailwind CSS v4, Radix UI, Shadcn/ui |
+| **Animations** | GSAP, Three.js |
+| **State** | Zustand |
+| **Database** | MySQL (mysql2) |
+| **Auth** | bcryptjs, Zod, React Hook Form |
+| **Email** | Nodemailer (OTP + PDF bill attachment) |
+| **Payment** | Razorpay |
+| **AI Chatbot** | Groq API (LLaMA3) |
+| **Charts** | Recharts |
+| **Export** | Excel (order data), jsPDF (email bill) |
+
+---
+
+## 📁 Project Structure
+
+```
+Foodrush/
+├── app/
+│   ├── page.tsx                  # Homepage + AI Chatbot
+│   ├── login/                    # Login page
+│   ├── signup/                   # Sign up page
+│   ├── menu/                     # Browse food
+│   ├── checkout/                 # Checkout + OTP
+│   ├── payment/                  # Razorpay + Ticket popup
+│   ├── track/                    # Order tracking
+│   ├── admin/                    # Admin dashboard
+│   └── api/                      # All API routes
+├── components/                   # UI components
+├── hooks/                        # Custom hooks (cart, auth)
+├── lib/                          # DB connection, utilities
+├── scripts/                      # DB seed scripts
+├── styles/                       # Global styles
+└── public/
+    └── screenshots/              # Add your screenshots here
+```
+
+---
+
+## ⚙️ Setup
+
+### Prerequisites
+- Node.js v18+
+- MySQL 8.0+
+- pnpm
+
+### Steps
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/DishantBhere/Foodrush.git
+cd Foodrush
+
+# 2. Install dependencies
+pnpm install
+
+# 3. Create environment file
+cp .env.example .env.local
+```
+
+### Environment Variables
+
+```env
+# Database
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=food_ordering_system
+
+# Auth
+JWT_SECRET=your_jwt_secret
+
+# Email (Nodemailer)
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_app_password
+
+# Razorpay
+RAZORPAY_KEY_ID=your_key_id
+RAZORPAY_KEY_SECRET=your_key_secret
+
+# Groq AI
+GROQ_API_KEY=your_groq_api_key
+```
+
+```bash
+# 4. Set up database
+mysql -u root -p < scripts/schema.sql
+
+# 5. Run development server
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)  
+Admin → [http://localhost:3000/admin](http://localhost:3000/admin)
+
+---
+
+## ⚠️ Notes
+
+- Razorpay is in **test mode** — no real transactions
+- Runs **locally only**, not deployed
+- PDF bill sent as **email attachment** via Nodemailer after payment success
+
+---
+
+*Built by [Dishant Bhere](https://github.com/DishantBhere) · B.Sc. IT · Theem College · University of Mumbai*
