@@ -5,22 +5,21 @@
 
 ## 📸 Screenshots
 
-| Homepage | Menu |
-|---|---|
-| ![Homepage](public/screenshots/homepage.png) | ![Menu](public/screenshots/menu.png) |
-
-| Checkout | Payment |
-|---|---|
-| ![Checkout](public/screenshots/checkout.png) | ![Payment](public/screenshots/payment.png) |
-
-| Ticket | Order Tracking |
-|---|---|
-| ![Ticket](public/screenshots/ticket.png) | ![Tracking](public/screenshots/tracking.png) |
-
-| Admin Dashboard |
-|---|
-| ![Admin](public/screenshots/admin.png) |
-
+**Homepage**
+![Homepage](https://github.com/user-attachments/assets/1f950355-44f7-4e3a-89da-ff298dbf6472)
+ 
+**AI Chatbot**
+![Chatbot](https://github.com/user-attachments/assets/28bce8e7-4ddb-4228-95ed-2ed0bdde0f13)
+ 
+**Menu**
+![Menu](https://github.com/user-attachments/assets/a200e019-3fe1-4162-9ba9-18401709519e)
+ 
+**Payment**
+![Payment](https://github.com/user-attachments/assets/dfd50418-b183-4986-a0f4-01c97f5a3f70)
+ 
+**Order Tracking**
+![Tracking](https://github.com/user-attachments/assets/079f0114-7ea6-4626-a5a2-223ad93bd8d2)
+ 
 ---
 
 ## 🔄 How It Works
