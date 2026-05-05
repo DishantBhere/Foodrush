@@ -180,4 +180,4 @@ Admin → [http://localhost:3000/admin](http://localhost:3000/admin)
 
 ---
 
-*Built by [Dishant Bhere](https://github.com/DishantBhere) · B.Sc. IT  · University of Mumbai*
+*Built by [Dishant Bhere](https://github.com/DishantBhere) IT  · University of Mumbai*
