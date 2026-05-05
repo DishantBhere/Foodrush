@@ -1,6 +1,6 @@
 # 🍽️ FoodRush.io
 > Smart Campus Canteen Food Ordering System,
-It was my academic final year project. It's a full-stack smart canteen ordering system that replaces the traditional manual canteen process,students can browse the menu, order food, pay online, and track their order in real time, while admins manage everything from a central dashboard.
+It's was my academic final year project. It's a full-stack smart canteen ordering system that replaces the traditional manual canteen process,students can browse the menu, order food, pay online, and track their order in real time, while admins manage everything from a central dashboard.
 
 ---
 
